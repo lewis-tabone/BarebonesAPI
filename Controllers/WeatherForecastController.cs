@@ -4,6 +4,8 @@ namespace BarebonesAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    // replace the above with the following to allow routes to be better inferred by convention. eg /WeatherForecast/someFunction
+    // [Route("[controller]/[action]")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
